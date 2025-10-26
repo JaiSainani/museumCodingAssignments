@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Your Name" />
+  <meta name="robots" content="noindex, nofollow" />
   <title>Museum of Cultural Memory — Collections</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -18,26 +19,190 @@
   </header>
 
   <main class="container">
-    <section class="collection-nav">
-      <button onclick="location.href='#archaeology'">Archaeology</button>
-      <button onclick="location.href='#anthropology'">Anthropology</button>
-      <button onclick="location.href='#history'">History</button>
+ 
+    <section class="collections-subnav">
+      <button class="tab-btn active" data-target="archaeology" aria-controls="archaeology">Archaeology</button>
+      <button class="tab-btn" data-target="anthropology" aria-controls="anthropology">Anthropology</button>
     </section>
 
-    <section id="archaeology" class="placeholder card">
-      <h2>Archaeology</h2>
-      <p>Gallery coming soon.</p>
+
+    <section id="archaeology" class="collection-section" aria-labelledby="arch-title">
+      <h1 id="arch-title" class="collection-h1">Archaeology</h1>
+
+      <div class="gallery">
+
+        <article class="artifact-card">
+          <figure class="artifact-media">
+            <img src="../images/collections/StoneArch.png"
+                 alt="Small stone archway built from stacked limestone blocks." />
+            <figcaption>Stone Arch</figcaption>
+          </figure>
+          <div class="artifact-content">
+            <h2>Stone Arch</h2>
+            <dl class="meta-grid">
+              <dt>Name</dt><dd>Stone Arch</dd>
+              <dt>Material</dt><dd>Limestone blocks</dd>
+              <dt>Size/Weight/Shape</dt><dd>~1.2 m span; semicircular arch; est. &gt;150 kg</dd>
+              <dt>Estimated Age</dt><dd>~2,000 years (stratigraphic association)</dd>
+              <dt>Preservation State</dt><dd>Complete; minor edge chipping</dd>
+              <dt>Location Found</dt><dd>Temple approach, Trench D, 0.9 m depth</dd>
+              <dt>Use and Function</dt><dd>Architectural passage element</dd>
+              <dt>Likely Purpose</dt><dd>Threshold or small gate</dd>
+              <dt>Evidence of Use</dt><dd>Footpath wear on base stones</dd>
+              <dt>Manufacture Clues</dt><dd>Block dressing marks; lime mortar traces</dd>
+              <dt>Cultural Context — Found With</dt><dd>Carved paving stones; ceramic roof tiles</dd>
+              <dt>Burial or Habitat Context</dt><dd>Collapsed wall horizon within courtyard fill</dd>
+              <dt>Symbolism</dt><dd>None recorded on blocks; no inscriptions</dd>
+              <dt>Comparison</dt><dd>Similar arches in Site Cluster B (Phase II)</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="artifact-card">
+          <figure class="artifact-media">
+            <img src="../images/collections/CeramicBowl.png"
+                 alt="Earthenware bowl with faint geometric banding near the rim." />
+            <figcaption>Ceramic Bowl</figcaption>
+          </figure>
+          <div class="artifact-content">
+            <h2>Ceramic Bowl</h2>
+            <dl class="meta-grid">
+              <dt>Name</dt><dd>Earthenware Bowl</dd>
+              <dt>Material</dt><dd>Low-fire earthenware; iron-rich slip</dd>
+              <dt>Size/Weight/Shape</dt><dd>Ø ~18 cm; shallow hemispherical; ~420 g</dd>
+              <dt>Estimated Age</dt><dd>~1,200 BP (typological)</dd>
+              <dt>Preservation State</dt><dd>Complete; rim abrasion; soot on exterior</dd>
+              <dt>Location Found</dt><dd>Domestic block A; room floor, near hearth</dd>
+              <dt>Use and Function</dt><dd>Food preparation/serving</dd>
+              <dt>Likely Purpose</dt><dd>Household vessel</dd>
+              <dt>Evidence of Use</dt><dd>Interior residue ring; exterior soot band</dd>
+              <dt>Manufacture Clues</dt><dd>Coil-built; paddle-smoothed; faint band motif</dd>
+              <dt>Cultural Context — Found With</dt><dd>Grinding stone fragment; charred seeds</dd>
+              <dt>Burial or Habitat Context</dt><dd>Domestic occupation layer</dd>
+              <dt>Symbolism</dt><dd>Geometric banding; non-figurative</dd>
+              <dt>Comparison</dt><dd>Comparable to Village Type R2 bowls</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="artifact-card">
+          <figure class="artifact-media">
+            <img src="../images/collections/ObsidianSpearhead.png"
+                 alt="Dark obsidian spearhead fragment with visible flake scars." />
+            <figcaption>Obsidian spearhead</figcaption>
+          </figure>
+          <div class="artifact-content">
+            <h2>Obsidian Spearhead Fragment</h2>
+            <dl class="meta-grid">
+              <dt>Name</dt><dd>Obsidian Spearhead Fragment</dd>
+              <dt>Material</dt><dd>Volcanic glass (obsidian)</dd>
+              <dt>Size/Weight/Shape</dt><dd>7–8 cm; leaf-shaped; ~18–20 g</dd>
+              <dt>Estimated Age</dt><dd>~2,100 BP (contextual)</dd>
+              <dt>Preservation State</dt><dd>Partial; tip loss; retouched edges</dd>
+              <dt>Location Found</dt><dd>Ridgefield Site B; Layer IV silts</dd>
+              <dt>Use and Function</dt><dd>Projectile point component</dd>
+              <dt>Likely Purpose</dt><dd>Hunting spearhead</dd>
+              <dt>Evidence of Use</dt><dd>Micro-chipping on lateral edges; polish near haft</dd>
+              <dt>Manufacture Clues</dt><dd>Pressure flaking; base thinning for hafting</dd>
+              <dt>Cultural Context — Found With</dt><dd>Basalt flakes; charcoal flecks; small fauna</dd>
+              <dt>Burial or Habitat Context</dt><dd>Open-air camp horizon above hearth lens</dd>
+              <dt>Symbolism</dt><dd>None observed</dd>
+              <dt>Comparison</dt><dd>Matches Late Archaic point Type O-3</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="anthropology" class="placeholder card">
-      <h2>Anthropology</h2>
-      <p>Gallery coming soon.</p>
-    </section>
+    <section id="anthropology" class="collection-section" aria-labelledby="anth-title" style="display:none;">
+      <h1 id="anth-title" class="collection-h1">Anthropology</h1>
 
-    <section id="history" class="placeholder card">
-      <h2>History</h2>
-      <p>Gallery coming soon.</p>
+      <div class="gallery">
+
+        <article class="artifact-card">
+          <figure class="artifact-media">
+            <img src="../images/collections/Skull.png"
+                 alt="Adult human skull with complete dentition visible, on neutral background." />
+            <figcaption>Human skull</figcaption>
+          </figure>
+          <div class="artifact-content">
+            <h2>Human Skull (Adult)</h2>
+            <dl class="meta-grid">
+              <dt>Name</dt><dd>Adult Human Skull</dd>
+              <dt>Material</dt><dd>Cranial bone (human)</dd>
+              <dt>Size/Weight/Shape</dt><dd>Average adult; ~1.2 kg</dd>
+              <dt>Estimated Age</dt><dd>Context ~800–900 BP (no direct AMS)</dd>
+              <dt>Preservation State</dt><dd>Complete; minor sutural erosion</dd>
+              <dt>Location Found</dt><dd>Burial mound sector C; locus 7</dd>
+              <dt>Use and Function</dt><dd>—</dd>
+              <dt>Likely Purpose</dt><dd>—</dd>
+              <dt>Evidence of Use</dt><dd>—</dd>
+              <dt>Manufacture Clues</dt><dd>—</dd>
+              <dt>Cultural Context — Found With</dt><dd>Beads; shell fragment; ceramic sherd</dd>
+              <dt>Burial or Habitat Context</dt><dd>Primary interment; supine</dd>
+              <dt>Symbolism</dt><dd>Not applicable</dd>
+              <dt>Comparison</dt><dd>Morphology consistent with adult cohort at site</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="artifact-card">
+          <figure class="artifact-media">
+            <img src="../images/collections/BonePendant.png"
+                 alt="Oval bone pendant with incised spiral and suspension hole at the top." />
+            <figcaption>Bone pendant</figcaption>
+          </figure>
+          <div class="artifact-content">
+            <h2>Bone Pendant</h2>
+            <dl class="meta-grid">
+              <dt>Name</dt><dd>Carved Bone Pendant</dd>
+              <dt>Material</dt><dd>Animal bone</dd>
+              <dt>Size/Weight/Shape</dt><dd>Oval; ~5 cm tall; ~14 g</dd>
+              <dt>Estimated Age</dt><dd>~700 BP (contextual)</dd>
+              <dt>Preservation State</dt><dd>Complete; surface wear</dd>
+              <dt>Location Found</dt><dd>Cave sector E; alcove deposit</dd>
+              <dt>Use and Function</dt><dd>Personal adornment</dd>
+              <dt>Likely Purpose</dt><dd>Pendant with suspension hole</dd>
+              <dt>Evidence of Use</dt><dd>Polish on loop; abrasion on incised motif</dd>
+              <dt>Manufacture Clues</dt><dd>Incised spiral; drilled suspension</dd>
+              <dt>Cultural Context — Found With</dt><dd>Bead cluster; textile scrap</dd>
+              <dt>Burial or Habitat Context</dt><dd>Secondary deposit within cave fill</dd>
+              <dt>Symbolism</dt><dd>Geometric spiral; non-figurative</dd>
+              <dt>Comparison</dt><dd>Comparable pendants in Cluster B assemblage</dd>
+            </dl>
+          </div>
+        </article>
+
+  
+        <article class="artifact-card">
+          <figure class="artifact-media">
+            <img src="../images/collections/BurialBundle.png"
+                 alt="Wrapped burial bundle form with layered textile visible." />
+            <figcaption>Burial bundle</figcaption>
+          </figure>
+          <div class="artifact-content">
+            <h2>Burial Bundle (Wrapped)</h2>
+            <dl class="meta-grid">
+              <dt>Name</dt><dd>Wrapped Burial Bundle</dd>
+              <dt>Material</dt><dd>Textile layers; organic fibers</dd>
+              <dt>Size/Weight/Shape</dt><dd>~60 × 20 cm; elongated form</dd>
+              <dt>Estimated Age</dt><dd>~1,200 BP (contextual)</dd>
+              <dt>Preservation State</dt><dd>Partial; fragile textile layers</dd>
+              <dt>Location Found</dt><dd>Domestic floor 2; near hearth stones</dd>
+              <dt>Use and Function</dt><dd>Mortuary wrapping</dd>
+              <dt>Likely Purpose</dt><dd>Containment of remains</dd>
+              <dt>Evidence of Use</dt><dd>Soot staining on outer wrap</dd>
+              <dt>Manufacture Clues</dt><dd>Simple tabby weave; Z-twist warp</dd>
+              <dt>Cultural Context — Found With</dt><dd>Charred seeds; spindle whorl fragment</dd>
+              <dt>Burial or Habitat Context</dt><dd>Domestic occupation; adjacent to hearth</dd>
+              <dt>Symbolism</dt><dd>None recorded</dd>
+              <dt>Comparison</dt><dd>Matches weave density of Cluster B textiles</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
+  <script src="../js/collections.js"></script>
 </body>
 </html>
