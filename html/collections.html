@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Your Name" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Museum of Cultural Memory — Collections</title>
   <link rel="stylesheet" href="../css/style.css" />
@@ -15,22 +15,22 @@
       <a href="../index.html">Home</a>
       <a href="staff.html">Staff</a>
       <a href="collections.html" aria-current="page">Collections</a>
+      <a href="shop.html">Shop</a>
     </nav>
   </header>
 
   <main class="container">
- 
     <section class="collections-subnav">
       <button class="tab-btn active" data-target="archaeology" aria-controls="archaeology">Archaeology</button>
       <button class="tab-btn" data-target="anthropology" aria-controls="anthropology">Anthropology</button>
     </section>
 
-
+    <!-- =============== ARCHAEOLOGY =============== -->
     <section id="archaeology" class="collection-section" aria-labelledby="arch-title">
       <h1 id="arch-title" class="collection-h1">Archaeology</h1>
 
       <div class="gallery">
-
+        <!-- Stone Arch -->
         <article class="artifact-card">
           <figure class="artifact-media">
             <img src="../images/collections/StoneArch.png"
@@ -58,6 +58,7 @@
           </div>
         </article>
 
+        <!-- Ceramic Bowl -->
         <article class="artifact-card">
           <figure class="artifact-media">
             <img src="../images/collections/CeramicBowl.png"
@@ -85,6 +86,7 @@
           </div>
         </article>
 
+        <!-- Obsidian Spearhead -->
         <article class="artifact-card">
           <figure class="artifact-media">
             <img src="../images/collections/ObsidianSpearhead.png"
@@ -114,11 +116,12 @@
       </div>
     </section>
 
+    <!-- =============== ANTHROPOLOGY =============== -->
     <section id="anthropology" class="collection-section" aria-labelledby="anth-title" style="display:none;">
       <h1 id="anth-title" class="collection-h1">Anthropology</h1>
 
       <div class="gallery">
-
+        <!-- Skull -->
         <article class="artifact-card">
           <figure class="artifact-media">
             <img src="../images/collections/Skull.png"
@@ -146,6 +149,7 @@
           </div>
         </article>
 
+        <!-- Bone Pendant -->
         <article class="artifact-card">
           <figure class="artifact-media">
             <img src="../images/collections/BonePendant.png"
@@ -173,7 +177,7 @@
           </div>
         </article>
 
-  
+        <!-- Burial Bundle -->
         <article class="artifact-card">
           <figure class="artifact-media">
             <img src="../images/collections/BurialBundle.png"
@@ -203,6 +207,7 @@
       </div>
     </section>
   </main>
+
   <script src="../js/collections.js"></script>
 </body>
 </html>

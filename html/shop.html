@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Your Name" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Museum of Cultural Memory — Souvenir Shop</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Museum of Cultural Memory</h1>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="staff.html">Staff</a>
+      <a href="collections.html">Collections</a>
+      <a href="shop.html" aria-current="page">Shop</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="collection-h1">Souvenir Shop</h1>
+    <p class="muted">Click any item image to view details. Hover for a quick quote. Prices in USD.</p>
+
+    <section class="shop-grid" aria-label="Products">
+
+      <!-- Item 1 -->
+      <article class="souvenir-item"
+        data-id="item-obsidian-replica"
+        data-title="Obsidian Spearhead Replica"
+        data-price="22.00"
+        data-img="../images/collections/ObsidianSpearhead.png"
+        data-collection="Archaeology"
+        data-material="Resin with obsidian finish"
+        data-location="Ridgefield Site B"
+        data-purpose="Desk artifact">
+        <img
+          src="../images/collections/ObsidianSpearhead.png"
+          alt="Replica obsidian spearhead with glossy finish."
+          title="“Edge retouch and glossy sheen.” — Field notes"
+          class="souvenir-img" />
+        <div class="souvenir-info">
+          <h2>Obsidian Spearhead Replica</h2>
+          <p class="desc">
+            <strong>Collection:</strong> Archaeology ·
+            <strong>Material:</strong> Resin ·
+            <strong>Location:</strong> Ridgefield Site B ·
+            <strong>Purpose:</strong> Desk artifact
+          </p>
+          <p class="price">$22.00</p>
+          <button class="add-btn" aria-label="Add Obsidian Spearhead Replica to Cart">
+            Add Obsidian Spearhead Replica to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- Item 2 -->
+      <article class="souvenir-item"
+        data-id="item-stone-arch-postcards"
+        data-title="Stone Arch Postcard Set"
+        data-price="9.00"
+        data-img="../images/collections/StoneArch.png"
+        data-collection="Archaeology"
+        data-material="Cardstock prints"
+        data-location="Temple approach, Trench D"
+        data-purpose="Postcard set">
+        <img
+          src="../images/collections/StoneArch.png"
+          alt="Postcard image of the small limestone arch."
+          title="“Threshold of the old temple.” — Site diary"
+          class="souvenir-img" />
+        <div class="souvenir-info">
+          <h2>Stone Arch Postcard Set</h2>
+          <p class="desc">
+            <strong>Collection:</strong> Archaeology ·
+            <strong>Material:</strong> Cardstock ·
+            <strong>Location:</strong> Temple approach ·
+            <strong>Purpose:</strong> Postcard set
+          </p>
+          <p class="price">$9.00</p>
+          <button class="add-btn" aria-label="Add Stone Arch Postcard Set to Cart">
+            Add Stone Arch Postcard Set to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- Item 3 -->
+      <article class="souvenir-item"
+        data-id="item-bone-pendant-necklace"
+        data-title="Bone Pendant Necklace (Replica)"
+        data-price="18.00"
+        data-img="../images/collections/BonePendant.png"
+        data-collection="Anthropology"
+        data-material="Bone substitute"
+        data-location="Cave sector E"
+        data-purpose="Pendant">
+        <img
+          src="../images/collections/BonePendant.png"
+          alt="Bone pendant with incised spiral and suspension hole, replica."
+          title="“Incised spiral motif.” — Cave notes"
+          class="souvenir-img" />
+        <div class="souvenir-info">
+          <h2>Bone Pendant Necklace (Replica)</h2>
+          <p class="desc">
+            <strong>Collection:</strong> Anthropology ·
+            <strong>Material:</strong> Bone substitute ·
+            <strong>Location:</strong> Cave sector E ·
+            <strong>Purpose:</strong> Pendant
+          </p>
+          <p class="price">$18.00</p>
+          <button class="add-btn" aria-label="Add Bone Pendant Necklace (Replica) to Cart">
+            Add Bone Pendant Necklace (Replica) to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- Item 4 -->
+      <article class="souvenir-item"
+        data-id="item-ceramic-bowl-mini"
+        data-title="Ceramic Bowl Miniature"
+        data-price="15.00"
+        data-img="../images/collections/CeramicBowl.png"
+        data-collection="Archaeology"
+        data-material="Earthenware"
+        data-location="Domestic block A"
+        data-purpose="Mini decor">
+        <img
+          src="../images/collections/CeramicBowl.png"
+          alt="Small earthenware bowl replica with faint geometric banding."
+          title="“Soot‑kissed shoulder band.” — Hearth record"
+          class="souvenir-img" />
+        <div class="souvenir-info">
+          <h2>Ceramic Bowl Miniature</h2>
+          <p class="desc">
+            <strong>Collection:</strong> Archaeology ·
+            <strong>Material:</strong> Earthenware ·
+            <strong>Location:</strong> Domestic block A ·
+            <strong>Purpose:</strong> Mini decor
+          </p>
+          <p class="price">$15.00</p>
+          <button class="add-btn" aria-label="Add Ceramic Bowl Miniature to Cart">
+            Add Ceramic Bowl Miniature to Cart
+          </button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Modal (single, dynamic) -->
+  <div id="item-modal" class="modal" role="dialog" aria-modal="true"
+       aria-labelledby="modal-title" aria-describedby="modal-desc" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" tabindex="-1">
+      <button class="modal-close" aria-label="Close" data-close>&times;</button>
+      <img id="modal-image" alt="" />
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc" class="muted"></p>
+      <p id="modal-price" class="modal-price"></p>
+      <button id="modal-add" class="add-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <script src="../js/shop.js"></script>
+</body>
+</html>
