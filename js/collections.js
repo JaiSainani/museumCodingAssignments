@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   buttons.forEach(btn => btn.addEventListener('click', () => showSection(btn.dataset.target)));
 
-  // Allow links with .tab-link to switch sections (used by "Back to Collections")
+  // Allow links with .tab-link to switch sections (used by "Back to Collechtions")
   document.addEventListener('click', (e) => {
     const link = e.target.closest('.tab-link');
     if (link && link.dataset.target) {
