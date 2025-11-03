@@ -20,10 +20,19 @@
   </header>
 
   <main class="container">
+    <!-- Required AI statement -->
+    <p class="disclaimer">
+      <strong>Note:</strong> The content in this gallery was entirely created by AI under human direction.
+      It was then curated, reviewed, and edited by a human before being published.
+    </p>
+
     <section class="collections-subnav">
       <button class="tab-btn active" data-target="archaeology" aria-controls="archaeology">Archaeology</button>
       <button class="tab-btn" data-target="anthropology" aria-controls="anthropology">Anthropology</button>
+      <button class="tab-btn" data-target="histories" aria-controls="histories">Histories</button>
     </section>
+
+    <p class="click-hint">Tip: Click any image to open a 150‑word Interpretation modal.</p>
 
     <!-- =============== ARCHAEOLOGY =============== -->
     <section id="archaeology" class="collection-section" aria-labelledby="arch-title">
@@ -33,8 +42,10 @@
         <!-- Stone Arch -->
         <article class="artifact-card">
           <figure class="artifact-media">
-            <img src="../images/collections/StoneArch.png"
-                 alt="Small stone archway built from stacked limestone blocks." />
+            <img
+              src="../images/collections/StoneArch.png"
+              alt="Small stone archway built from stacked limestone blocks."
+              data-modal-target="#modal-text-stone-arch" />
             <figcaption>Stone Arch</figcaption>
           </figure>
           <div class="artifact-content">
@@ -61,8 +72,10 @@
         <!-- Ceramic Bowl -->
         <article class="artifact-card">
           <figure class="artifact-media">
-            <img src="../images/collections/CeramicBowl.png"
-                 alt="Earthenware bowl with faint geometric banding near the rim." />
+            <img
+              src="../images/collections/CeramicBowl.png"
+              alt="Earthenware bowl with faint geometric banding near the rim."
+              data-modal-target="#modal-text-ceramic-bowl" />
             <figcaption>Ceramic Bowl</figcaption>
           </figure>
           <div class="artifact-content">
@@ -89,8 +102,10 @@
         <!-- Obsidian Spearhead -->
         <article class="artifact-card">
           <figure class="artifact-media">
-            <img src="../images/collections/ObsidianSpearhead.png"
-                 alt="Dark obsidian spearhead fragment with visible flake scars." />
+            <img
+              src="../images/collections/ObsidianSpearhead.png"
+              alt="Dark obsidian spearhead fragment with visible flake scars."
+              data-modal-target="#modal-text-obsidian-spearhead" />
             <figcaption>Obsidian spearhead</figcaption>
           </figure>
           <div class="artifact-content">
@@ -101,7 +116,7 @@
               <dt>Size/Weight/Shape</dt><dd>7–8 cm; leaf-shaped; ~18–20 g</dd>
               <dt>Estimated Age</dt><dd>~2,100 BP (contextual)</dd>
               <dt>Preservation State</dt><dd>Partial; tip loss; retouched edges</dd>
-              <dt>Location Found</dt><dd>Ridgefield Site B; Layer IV silts</dd>
+              <dt>Location Found</dt><dd>Ridgefield Site B; Layer IV silts</dt>
               <dt>Use and Function</dt><dd>Projectile point component</dd>
               <dt>Likely Purpose</dt><dd>Hunting spearhead</dd>
               <dt>Evidence of Use</dt><dd>Micro-chipping on lateral edges; polish near haft</dd>
@@ -124,8 +139,10 @@
         <!-- Skull -->
         <article class="artifact-card">
           <figure class="artifact-media">
-            <img src="../images/collections/Skull.png"
-                 alt="Adult human skull with complete dentition visible, on neutral background." />
+            <img
+              src="../images/collections/Skull.png"
+              alt="Adult human skull with complete dentition visible, on neutral background."
+              data-modal-target="#modal-text-human-skull" />
             <figcaption>Human skull</figcaption>
           </figure>
           <div class="artifact-content">
@@ -152,8 +169,10 @@
         <!-- Bone Pendant -->
         <article class="artifact-card">
           <figure class="artifact-media">
-            <img src="../images/collections/BonePendant.png"
-                 alt="Oval bone pendant with incised spiral and suspension hole at the top." />
+            <img
+              src="../images/collections/BonePendant.png"
+              alt="Oval bone pendant with incised spiral and suspension hole at the top."
+              data-modal-target="#modal-text-bone-pendant" />
             <figcaption>Bone pendant</figcaption>
           </figure>
           <div class="artifact-content">
@@ -180,8 +199,10 @@
         <!-- Burial Bundle -->
         <article class="artifact-card">
           <figure class="artifact-media">
-            <img src="../images/collections/BurialBundle.png"
-                 alt="Wrapped burial bundle form with layered textile visible." />
+            <img
+              src="../images/collections/BurialBundle.png"
+              alt="Wrapped burial bundle form with layered textile visible."
+              data-modal-target="#modal-text-burial-bundle" />
             <figcaption>Burial bundle</figcaption>
           </figure>
           <div class="artifact-content">
@@ -206,7 +227,434 @@
         </article>
       </div>
     </section>
+
+    <!-- =============== HISTORIES (Phase 2) =============== -->
+    <section id="histories" class="collection-section" aria-labelledby="hist-title" style="display:none;">
+      <h1 id="hist-title" class="collection-h1">Histories</h1>
+
+      <!-- History: Stone Arch -->
+      <article class="history-entry">
+        <div class="history-grid">
+          <figure class="history-media">
+            <img src="../images/collections/StoneArch.png" alt="Small stone archway built from stacked limestone blocks." />
+            <figcaption>Stone Arch</figcaption>
+          </figure>
+          <div class="history-body">
+            <h2 class="history-title">Stone Arch — Threshold Segment</h2>
+            <dl class="history-facts">
+              <dt>Artifact ID</dt><dd>“Stone Arch”</dd>
+              <dt>Material</dt><dd>Limestone blocks; lime mortar traces</dd>
+              <dt>Estimated Age</dt><dd>~2,000 years (stratigraphic association)</dd>
+              <dt>Provenience</dt><dd>Temple approach, Trench D, 0.9 m depth</dd>
+              <dt>Preservation</dt><dd>Complete; minor edge chipping; foot-wear polish on base stones</dd>
+            </dl>
+            <h3>What the Experts Believe</h3>
+            <p>
+              Built of dressed limestone and set on a paved approach, this modest arch likely framed a threshold between
+              public and semi-restricted space. Chisel striations on the voussoirs, mortar traces within joints, and
+              rounded wear on the base blocks speak to both deliberate construction and long-footfall traffic. The arch’s
+              1.2‑meter span and semicircular profile are consistent with small passage gates that channeled movement
+              toward a courtyard or shrine. No dedicatory inscription survives; interpretation rests on material evidence
+              and context.
+            </p>
+            <p>
+              The piece was recovered from a collapse horizon that sealed the approach. Nearby were carved paving stones
+              and roof tiles, indicating architectural failure followed by rapid burial—a circumstance that preserved the
+              arch in situ. Its proportions, tooling, and masonry technique parallel minor arches in Site Cluster B,
+              Phase II, suggesting shared building practice rather than monumental display. The base stones preserve a
+              shallow “shine,” a polish typical of sustained tread and dust abrasion, reinforcing a reading of daily
+              passage rather than ceremony alone.
+            </p>
+            <h3>Comparative Note</h3>
+            <p>
+              While monumental gateways elsewhere bear reliefs and inscriptions, small threshold arches often functioned
+              without text. Our arch’s tool marks and mortar seams match utilitarian examples, and its placement on an
+              approach rather than a perimeter wall supports a traffic‑control role. Any symbolic meaning—processional,
+              ritual liminality—remains possible but cannot be asserted from the preserved fabric alone.
+            </p>
+            <h3>Cautionary Note on Interpretation</h3>
+            <p>
+              Absent inscriptions or ritual deposits, we avoid attributing specific cult practice. The interpretation is
+              grounded in masonry details, wear, and context; future discoveries could refine the reading.
+            </p>
+            <h3>On Display Courtesy of</h3>
+            <p>Temple Approach Excavations Project.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- History: Ceramic Bowl (400 words from your doc) -->
+      <article class="history-entry">
+        <div class="history-grid">
+          <figure class="history-media">
+            <img src="../images/collections/CeramicBowl.png" alt="Earthenware bowl with faint geometric banding near the rim." />
+            <figcaption>Red‑Slipped Ceramic Bowl</figcaption>
+          </figure>
+          <div class="history-body">
+            <h2 class="history-title">Red‑Slipped Ceramic Bowl (MC‑ARC‑CB‑05)</h2>
+            <dl class="history-facts">
+              <dt>Material</dt><dd>Fired clay with mica temper; red slip; light burnish</dd>
+              <dt>Estimated Age</dt><dd>3,050–2,900 BP (AMS‑dated hearth association)</dd>
+              <dt>Provenience</dt><dd>Riverside Terrace, Housepit 2, Floor Level II (N12/E08)</dd>
+              <dt>Preservation</dt><dd>Complete profile; small rim chip; soot on base</dd>
+            </dl>
+            <h3>What the Experts Believe</h3>
+            <p>
+              Hand‑coiled and carefully finished, this red‑slipped bowl illuminates everyday foodways in a house where
+              cooking, craft, and care overlapped. Its everted rim with a slight lip, smoothed interior, and thin red slip
+              point to deliberate surface treatment, while a gentle exterior burnish subtly catches the light. The base
+              carries soot, and a faint interior residue ring tracks repeated heating and stirring. Together with light rim
+              abrasion, these traits position the object squarely in domestic practice rather than ceremonial display.
+            </p>
+            <p>
+              Context strengthens the reading. The bowl was recovered on a sealed floor next to a hearth stone, within a
+              cool, low‑airflow microenvironment created by a later collapse layer. Associated finds—a grinding‑stone
+              fragment, charred barley seeds, and small shell beads—link cooking and grain processing to social presence.
+              These materials do not prove specific recipes or occasions, yet they suggest a household that prepared and
+              shared food in patterned routines.
+            </p>
+            <p>
+              Technically, coil joins are visible beneath the slip; an oxidizing firing (orange core) and light burnish
+              signal controlled manufacture. Comparable Phase II red‑slipped bowls from Lower Valley assemblages share rim
+              profiles and paste composition, indicating a broader regional tradition of kitchen ceramics. Such typological
+              parallels help situate the bowl in time and technology; they do not, by themselves, identify a specific
+              culture or community.
+            </p>
+            <p>
+              Guided by Indigenous Storywork and decolonial museology, we foreground material facts and acknowledge
+              uncertainty. Household vessels like this often carry memory across generations; they can encode everyday
+              hospitality, seasonal rhythms, and the ethics of sharing. Any future insights—whether from residue analysis,
+              community knowledge, or new comparative finds—may refine how we understand the roles this bowl played in the
+              intertwined crafts of nourishment and home.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- History: Obsidian Spearhead (400 words from your doc) -->
+      <article class="history-entry">
+        <div class="history-grid">
+          <figure class="history-media">
+            <img src="../images/collections/ObsidianSpearhead.png" alt="Obsidian spearhead with glossy luster." />
+            <figcaption>Obsidian Spearhead</figcaption>
+          </figure>
+          <div class="history-body">
+            <h2 class="history-title">Obsidian Spearhead (MC‑ARC‑OS‑17)</h2>
+            <dl class="history-facts">
+              <dt>Material</dt><dd>Volcanic glass (obsidian); resin traces at haft</dd>
+              <dt>Estimated Age</dt><dd>12,400–11,900 BP (contextual)</dd>
+              <dt>Provenience</dt><dd>South Ridge, Trench 3, Locus 7 (N18/E06)</dd>
+              <dt>Preservation</dt><dd>Tip intact; minor edge abrasion; retouched margins</dd>
+            </dl>
+            <h3>What the Experts Believe</h3>
+            <p>
+              Recovered from a shallow ash‑rich deposit sealed by wind‑laid silt, this obsidian spearhead represents the
+              technical precision and daily practicality of late Pleistocene toolmakers. The artifact’s mirror‑black
+              volcanic glass surface, pressure‑flaked retouch, and basal notch reflect expert craftsmanship. Resin residue
+              and edge polish at the haft suggest that it was once mounted on a shaft, used repeatedly, and resharpened
+              over time. Its tip remains intact, with only minor edge abrasion—a remarkable state of preservation given its
+              age.
+            </p>
+            <p>
+              The spearhead was found near a small hearth alongside charcoal flecks, two quartz flakes, and fragments of
+              small mammal bone. Field notes describe the discovery area as an “activity locus,” implying routine domestic
+              or subsistence tasks. While points of this kind have often been labeled “weapons,” comparative analysis and
+              ethnographic insights indicate that many served multipurpose roles—hunting, processing, or symbolic acts of
+              passage. Without direct cultural testimony, its precise function remains uncertain.
+            </p>
+            <p>
+              Chemical analysis links the obsidian to Unit R volcanic glass sources, and typological similarities tie it
+              to stemmed points from the Silver Lake series, suggesting regional technological exchange or shared knowledge
+              networks. The artifact’s design efficiency—a tapered profile, ground base, and controlled flaking—points to
+              both functionality and aesthetic intentionality.
+            </p>
+            <p>
+              Today, this spearhead is displayed not as a relic of violence but as evidence of ingenuity and adaptability.
+              Its story continues to evolve as new analyses refine our understanding. Interpretations remain provisional and
+              guided by respect for descendant communities and the cultural landscapes from which this object emerged.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- History: Human Skull (400 words from your doc) -->
+      <article class="history-entry">
+        <div class="history-grid">
+          <figure class="history-media">
+            <img src="../images/collections/Skull.png" alt="Adult human skull on neutral background." />
+            <figcaption>Cemetery Ridge Burial: Traces of an Ancestor</figcaption>
+          </figure>
+          <div class="history-body">
+            <h2 class="history-title">Cemetery Ridge Burial: Traces of an Ancestor (MC‑ANT‑HS‑12)</h2>
+            <dl class="history-facts">
+              <dt>Material</dt><dd>Human cranial bone</dd>
+              <dt>Estimated Age</dt><dd>~1,150–1,020 BP (AMS association)</dd>
+              <dt>Provenience</dt><dd>Cemetery Ridge, Pit 12 (S4/W3), 1.4 m depth</dd>
+              <dt>Preservation</dt><dd>~70% vault preserved; healed lesions; copper staining</dd>
+            </dl>
+            <h3>What the Experts Believe</h3>
+            <p>
+              Recovered from a carefully prepared, stone‑lined burial pit, this adult cranium represents an individual laid
+              to rest more than a millennium ago. The skeletal evidence—a largely closed sagittal suture, moderate dental
+              wear, and two healed cranial lesions—indicates maturity and survival of previous trauma. Green copper
+              staining at the left temporal region reflects contact with a copper‑alloy ornament, while compression
+              fractures and calcite accretions formed after burial. Approximately seventy percent of the cranium survives,
+              allowing reliable metric assessment and cautious comparison with other Late Woodland series.
+            </p>
+            <p>
+              The burial context offers a glimpse of funerary practice. The head’s northwest orientation, ochre dusting,
+              and the presence of shell and copper‑alloy beads signal deliberate placement and care. Field notes document a
+              thin ochre lens and light charcoal flecks within the pit fill—details suggesting a structured deposit rather
+              than a disturbed context. Although the post‑cranial skeleton was not recovered, the confined pit size implies
+              a flexed body position consistent with neighboring Cemetery Ridge burials.
+            </p>
+            <p>
+              Comparative morphology situates this individual within regional cranial variation observed at Site CR‑B, but
+              statistical overlap alone cannot confirm cultural affiliation. Stable‑isotope and aDNA studies could refine
+              dietary and kinship profiles, yet such analyses proceed only with descendant‑community approval. From an
+              ethical standpoint, the object remains an ancestor rather than a specimen. Its documentation aims to preserve
+              information while ensuring dignity and potential future repatriation.
+            </p>
+            <p>
+              Following decolonial museology and Indigenous ethics of care, the museum refrains from visual display and
+              prioritizes consultation before any reproduction or research sampling. All descriptions remain provisional
+              until descendant representatives review context and language. The catalog’s purpose is dual: to maintain a
+              transparent scientific record and to uphold the enduring respect owed to the person whose remains now remind
+              us that knowledge and reverence must coexist.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- History: Bone Pendant -->
+      <article class="history-entry">
+        <div class="history-grid">
+          <figure class="history-media">
+            <img src="../images/collections/BonePendant.png" alt="Oval bone pendant with incised spiral and a drilled suspension hole." />
+            <figcaption>Carved Bone Pendant</figcaption>
+          </figure>
+          <div class="history-body">
+            <h2 class="history-title">Carved Bone Pendant — Wear, Craft, Memory</h2>
+            <dl class="history-facts">
+              <dt>Material</dt><dd>Animal bone; incised spiral; drilled loop</dd>
+              <dt>Estimated Age</dt><dd>~700 BP (contextual)</dd>
+              <dt>Provenience</dt><dd>Cave sector E, alcove deposit</dd>
+              <dt>Preservation</dt><dd>Complete; loop polish; motif abrasion</dd>
+            </dl>
+            <h3>What the Experts Believe</h3>
+            <p>
+              This hand‑worked pendant was cut from dense cortical bone, then shaped, drilled, and finished with a shallow
+              spiral motif. The suspension hole shows rounded polish and micro‑abrasion, evidence of long wear against
+              cordage or fiber ties. The incised lines retain compacted residue within the grooves, a common outcome when
+              oils, dust, and time mingle on favored objects. Its oval plan and balanced mass would have hung comfortably
+              from the chest or neck.
+            </p>
+            <p>
+              Context matters: the pendant was recovered from a dry alcove in Sector E together with a bead cluster and a
+              small textile scrap. The secondary nature of the deposit suggests curation before discard or loss. Spiral
+              motifs appear widely and need not signal a single meaning; here they may index craft tradition more than
+              fixed symbolism. Absent a secure association with a burial or inscribed cache, we avoid claims about status,
+              gender, or role.
+            </p>
+            <h3>Comparative Note</h3>
+            <p>
+              Comparable pendants in Cluster B share drilling technique and motif layout, indicating community practice or
+              inter‑site learning. Micro‑striations around the loop match bone‑bit drilling; the uniform line depth across
+              the spiral suggests steady tool control rather than hurried decoration.
+            </p>
+            <h3>Cautionary Note on Interpretation</h3>
+            <p>
+              Personal objects attract big stories. Our reading stays with craft evidence and wear: a cherished adornment,
+              likely worn often, later left or placed in a cave alcove. Interpretation remains provisional.
+            </p>
+            <h3>On Display Courtesy of</h3>
+            <p>Sector E Survey and Conservation Initiative.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- History: Burial Bundle -->
+      <article class="history-entry">
+        <div class="history-grid">
+          <figure class="history-media">
+            <img src="../images/collections/BurialBundle.png" alt="Layered textile wrapping forming an elongated bundle." />
+            <figcaption>Wrapped Burial Bundle</figcaption>
+          </figure>
+          <div class="history-body">
+            <h2 class="history-title">Wrapped Burial Bundle — Cloth, Fire, Farewell</h2>
+            <dl class="history-facts">
+              <dt>Material</dt><dd>Textile layers; organic fibers (tabby weave)</dd>
+              <dt>Estimated Age</dt><dd>~1,200 BP (contextual)</dd>
+              <dt>Provenience</dt><dd>Domestic Floor 2, adjacent to hearth stones</dd>
+              <dt>Preservation</dt><dd>Partial; fragile layers; outer soot staining</dd>
+            </dl>
+            <h3>What the Experts Believe</h3>
+            <p>
+              The bundle consists of layered textiles folded around an inner core now too fragile to examine without
+              destructive methods. The outer wraps carry soot and fine ash, consistent with placement beside an active
+              hearth in the hours before sealing. Weaving analysis identifies a simple tabby structure with Z‑twist warp,
+              a common utilitarian cloth that here served a ceremonial purpose: protection and transition.
+            </p>
+            <p>
+              Found within a household floor rather than a cemetery, the bundle reflects mortuary practice embedded in
+              domestic life. Nearby were charred seeds and a spindle‑whorl fragment—quiet witnesses to a home where work
+              continued even as a farewell was staged. Whether the bundle held an infant, selected bones, or token
+              offerings cannot be stated from current evidence; the museum adheres to minimal handling and consultation
+              before any further study.
+            </p>
+            <h3>Comparative Note</h3>
+            <p>
+              Domestic mortuary deposits are documented across the region, often marking liminal moments before later
+              relocation to formal cemeteries. Textile counts and thread twist match Cluster B household cloth, suggesting
+              families drew on everyday materials to enact care at life’s threshold.
+            </p>
+            <h3>Cautionary Note on Interpretation</h3>
+            <p>
+              Out of respect, no imaging or unwrapping is planned without community guidance. Interpretations center on
+              cloth, soot, and setting; specific identities or rites are not inferred.
+            </p>
+            <h3>On Display Courtesy of</h3>
+            <p>Household Rituals Documentation Project.</p>
+          </div>
+        </div>
+      </article>
+
+      <p class="back-link"><a href="#" data-target="archaeology" class="tab-link">Back to Collections</a></p>
+    </section>
   </main>
+
+  <!-- ================= Modal shell for text (Phase 1) ================= -->
+  <div class="modal" id="modal" style="display:none" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ================= Hidden modal content blocks (one per item) ================= -->
+
+  <!-- Stone Arch — 150 words -->
+  <div class="modal-item" id="modal-text-stone-arch" hidden>
+    <h2 id="modal-title">Stone Arch — Collection Note</h2>
+    <p class="modal-kv">
+      <strong>Material:</strong> Dressed limestone blocks with lime mortar traces<br/>
+      <strong>Function (Hypothesized):</strong> Threshold / small passage gate<br/>
+      <strong>Location Found:</strong> Temple approach, Trench D, 0.9 m depth
+    </p>
+    <p>
+      Built of dressed limestone and set along a paved approach, this modest arch likely framed movement between
+      public and semi‑restricted space. Chisel striations on the blocks, mortar traces in joints, and a shallow
+      polish on the base stones point to deliberate construction and long foot traffic. Its 1.2‑meter span and
+      semicircular profile are consistent with small gates that guide visitors toward a courtyard or shrine.
+      Recovered from a collapse layer that sealed the approach, the arch survived essentially intact—evidence of
+      rapid burial after structural failure. No inscriptions or dedicatory deposits were recovered; interpretation
+      rests on masonry details and context rather than written claims. While a symbolic function is possible, the
+      clearest reading is practical: a durable threshold built to withstand frequent use. As with all inferences,
+      this interpretation remains provisional pending future architectural finds nearby.
+    </p>
+  </div>
+
+  <!-- Ceramic Bowl — 150 words (from your doc) -->
+  <div class="modal-item" id="modal-text-ceramic-bowl" hidden>
+    <h2 id="modal-title">Red‑Slipped Ceramic Bowl — Collection Note</h2>
+    <p class="modal-kv">
+      <strong>Material:</strong> Fired clay with fine mica temper; interior red slip<br/>
+      <strong>Function (Hypothesized):</strong> Cooking / serving vessel<br/>
+      <strong>Location Found:</strong> Riverside Terrace, Housepit 2, beside hearth
+    </p>
+    <p>
+      Recovered from a house floor beside an ancient hearth, this red‑slipped bowl reveals how cooking once blended
+      daily labor with ritual care. Hand‑coiled and burnished to a soft sheen, the vessel shows soot on its base and a
+      faint residue ring inside—traces of repeated heating and stirring. Its red interior slip and thin, even walls
+      suggest both utility and aesthetic intention. Found with a grinding stone, charred barley seeds, and shell beads,
+      the bowl anchors a snapshot of domestic life nearly three millennia ago. While it likely served as a cooking or
+      serving vessel, its placement and refinement hint at symbolic or ceremonial use as well. The surrounding collapse
+      layer preserved it intact, offering a rare, tangible link to the gestures of nourishment and community that shaped
+      early Plateau households. All interpretations remain evidence‑based and subject to continuing community review.
+    </p>
+  </div>
+
+  <!-- Obsidian Spearhead — 150 words (from your doc) -->
+  <div class="modal-item" id="modal-text-obsidian-spearhead" hidden>
+    <h2 id="modal-title">Obsidian Spearhead — Collection Note</h2>
+    <p class="modal-kv">
+      <strong>Material:</strong> Volcanic glass (obsidian); resin traces at haft<br/>
+      <strong>Function (Hypothesized):</strong> Projectile point / blade (tool)<br/>
+      <strong>Location Found:</strong> South Ridge, Trench 3, Locus 7 (ash lens)
+    </p>
+    <p>
+      Recovered from a shallow ash lens near a hearth, this finely crafted obsidian spearhead shows evidence of use and
+      remarkable preservation. Its mirror‑black volcanic glass surface and sharp, pressure‑flaked edges reveal expert
+      workmanship. Resin residue and polish at the basal notch indicate hafting, suggesting the piece was once mounted
+      on a shaft and used as a tool—possibly for hunting, though conflict use cannot be confirmed. Edge micro‑chipping
+      further supports contact with organic material or hide. The surrounding finds—charcoal flecks, quartz flakes, and
+      small mammal bones—situate the artifact within a domestic activity area rather than a battlefield. Protected by
+      cool, stable ash deposits, the spearhead remained nearly complete, its context intact. While typologically similar
+      to Silver Lake‑series points, this example represents a distinct local tradition. All interpretations remain
+      provisional pending radiocarbon testing of associated charcoal.
+    </p>
+  </div>
+
+  <!-- Human Skull — 150 words (from your doc) -->
+  <div class="modal-item" id="modal-text-human-skull" hidden>
+    <h2 id="modal-title">Cemetery Ridge Burial — Collection Note</h2>
+    <p class="modal-kv">
+      <strong>Material:</strong> Human cranial bone<br/>
+      <strong>Purpose:</strong> Primary burial component (ancestor)<br/>
+      <strong>Location Found:</strong> Cemetery Ridge, Burial Pit 12 (stone‑lined)
+    </p>
+    <p>
+      Recovered from a stone‑lined pit at Cemetery Ridge, this adult cranium represents an ancestor interred roughly
+      1,100 years ago. The skull’s closed sagittal suture, moderate dental wear, and two healed lesions suggest an
+      individual who lived well into adulthood and survived earlier injuries. Subtle green copper staining at the left
+      temple hints at contact with a copper‑alloy ornament. The burial context—a flexed body orientation, ochre dusting,
+      and accompanying shell and copper‑alloy beads—marks a carefully prepared interment. Light root etching and minor
+      surface abrasion show long‑term soil contact but no evidence of violence or post‑mortem alteration. Interpreted
+      through an Indigenous ethic of care, this record preserves information while honoring personhood. Each measurement
+      and observation adds to knowledge of health, mobility, and craft exchange in the Late Woodland period. The narrative
+      remains provisional and guided by descendant‑community consultation to ensure dignity and cultural respect.
+    </p>
+  </div>
+
+  <!-- Bone Pendant — 150 words -->
+  <div class="modal-item" id="modal-text-bone-pendant" hidden>
+    <h2 id="modal-title">Carved Bone Pendant — Collection Note</h2>
+    <p class="modal-kv">
+      <strong>Material:</strong> Animal bone; incised spiral; drilled loop<br/>
+      <strong>Function (Hypothesized):</strong> Personal adornment (pendant)<br/>
+      <strong>Location Found:</strong> Cave Sector E, alcove deposit
+    </p>
+    <p>
+      Cut from dense bone and finished with a shallow spiral, this pendant bears the marks of long wear. The drilled loop
+      shows rounded polish and micro‑abrasion—typical of cordage contact—while shallow scuffing across the motif suggests
+      routine handling. Recovered from a dry alcove with a bead cluster and a small textile scrap, the pendant likely
+      spent time curated before being left or placed there. Spiral motifs occur widely and can index craft tradition more
+      than fixed symbolism; absent an inscription or ritual cache, we avoid assigning specific meanings. What the object
+      securely records is craft and care: skilled drilling, controlled incising, and a finish meant to be seen. As with
+      many personal items, interpretation stays close to material facts and context while acknowledging that descendant
+      communities may hold richer understandings of use and value.
+    </p>
+  </div>
+
+  <!-- Burial Bundle — 150 words -->
+  <div class="modal-item" id="modal-text-burial-bundle" hidden>
+    <h2 id="modal-title">Wrapped Burial Bundle — Collection Note</h2>
+    <p class="modal-kv">
+      <strong>Material:</strong> Layered textiles (tabby weave; Z‑twist warp)<br/>
+      <strong>Function (Hypothesized):</strong> Mortuary wrapping<br/>
+      <strong>Location Found:</strong> Domestic Floor 2, adjacent to hearth
+    </p>
+    <p>
+      Layered cloth folds form an elongated bundle with soot on the outer wraps, consistent with placement near an
+      active hearth before sealing. Thread counts and twist indicate sturdy household fabric repurposed for ceremony.
+      The deposit occurs within a domestic room rather than a cemetery, a pattern documented elsewhere when families held
+      short‑term rites at home prior to later relocation. Out of respect for community guidance and textile fragility, the
+      interior is not probed; whether the core held an infant, selected bones, or symbolic offerings is unknown. What is
+      certain—cloth, soot, hearth adjacency—grounds the interpretation in care and transition. Further study will proceed
+      only with consultation; for now, the bundle stands as quiet evidence that practices of farewell can be woven from
+      everyday materials.
+    </p>
+  </div>
 
   <script src="../js/collections.js"></script>
 </body>

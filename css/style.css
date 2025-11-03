@@ -125,7 +125,7 @@ body {
   gap: 10px;
   margin: 16px 0;
 }
-.tab-btn {
+.tab-btn, .tab-link {
   appearance: none;
   cursor: pointer;
   border: 1px solid #d6e0ff;
@@ -134,8 +134,10 @@ body {
   padding: 8px 12px;
   border-radius: 8px;
   font-weight: 600;
+  text-decoration: none;
 }
 .tab-btn.active { background: #cfe0ff; }
+.click-hint { color: var(--muted); margin: 4px 0 16px; }
 
 /* Section title per rubric */
 .collection-h1 {
@@ -166,6 +168,7 @@ body {
   height: auto;
   border-radius: 10px;
   display: block;
+  cursor: pointer; /* click to open modal */
 }
 .artifact-content h2 { margin: 0 0 8px; font-size: 18px; }
 
@@ -221,7 +224,7 @@ body {
 .add-btn:hover { background: #cfe0ff; }
 
 /* ===========================
-   Modal (shared for Shop items)
+   Modal (shop + collections)
    =========================== */
 .modal {
   position: fixed;
@@ -231,6 +234,8 @@ body {
   place-items: center;
 }
 .modal[hidden] { display: none !important; }
+
+/* Existing shop modal parts */
 .modal-backdrop {
   position: absolute;
   inset: 0;
@@ -268,6 +273,69 @@ body {
   color: #6b7c90;
 }
 
+/* New: text modal for Collections */
+#modal { /* overlay */
+  background: rgba(10,12,18,.55);
+}
+#modal .modal-content {
+  position: relative;
+  max-width: 840px;
+  width: calc(100% - 40px);
+  background: #f7f2ea; /* gallery-paper look */
+  color: #2a2a2a;
+  border: 1px solid #e3d8c7;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 12px 36px rgba(0,0,0,.35);
+  text-align: left; /* rubric: left-justified */
+}
+#modal .close-modal {
+  position: absolute;
+  top: 10px; right: 10px;
+  border: 0;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  color: #7b6c5a;
+}
+#modal-body h2 { margin: 0 0 6px; font-size: 20px; }
+#modal-body .modal-kv { margin: 0 0 10px; color: #574b3d; }
+#modal-body p { margin: 0 0 10px; }
+
+/* ===========================
+   Histories layout (Phase 2)
+   =========================== */
+.history-entry {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  margin: 16px 0;
+}
+.history-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.history-media img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.history-title { margin: 0 0 8px; font-size: 20px; }
+.history-facts {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 6px 10px;
+  margin: 0 0 10px;
+}
+.history-facts dt { color: var(--muted); font-weight: 600; }
+.history-facts dd { margin: 0; }
+.history-body h3 { margin: 10px 0 6px; font-size: 1rem; }
+.back-link { margin-top: 12px; }
+
 /* ===========================
    Footer / Disclaimer blocks
    =========================== */
@@ -304,4 +372,7 @@ body {
   .shop-grid { grid-template-columns: 1fr; }
   .souvenir-item { flex-direction: column; }
   .souvenir-img { width: 100%; }
+
+  /* Histories */
+  .history-grid { grid-template-columns: 1fr; }
 }
