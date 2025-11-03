@@ -183,8 +183,10 @@ body {
 .meta-grid dd { margin: 0; line-height: 1.5; }
 
 /* ===========================
-   Shop: Grid & Items (Phase 1)
+   Shop: Grid & Items
    =========================== */
+.shop-toolbar { margin: 8px 0 16px; }
+
 .shop-grid {
   display: grid;
   grid-template-columns: 1.1fr 1.1fr;
@@ -192,6 +194,7 @@ body {
   margin-top: 10px;
 }
 .souvenir-item {
+  position: relative;
   display: flex;
   gap: 16px;
   padding: 14px;
@@ -222,6 +225,18 @@ body {
   font-weight: 600;
 }
 .add-btn:hover { background: #cfe0ff; }
+
+/* Qty badge in Shop (Phase 2 polish) */
+.qty-badge {
+  position: absolute;
+  top: 8px; left: 8px;
+  background: #1e63ff;
+  color: #fff;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
 
 /* ===========================
    Modal (shop + collections)
@@ -337,6 +352,68 @@ body {
 .back-link { margin-top: 12px; }
 
 /* ===========================
+   Cart (new)
+   =========================== */
+.cart-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0 16px;
+}
+.member-toggle { font-weight: 600; color: var(--ink); }
+.cart-ctrl-buttons button + button { margin-left: 8px; }
+
+.cart-root { margin-top: 8px; }
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 14px rgba(0,0,0,.05);
+}
+.cart-table th, .cart-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.cart-table thead th { background: #f3f6fb; text-align: left; }
+.cart-thumb { width: 88px; }
+.cart-thumb img { width: 72px; height: auto; border-radius: 8px; display: block; }
+.cart-name { color: var(--ink); }
+.amounts-col, .amount { text-align: right; font-variant-numeric: tabular-nums; }
+.cart-actions { text-align: right; }
+
+.cart-summary {
+  margin-top: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+.sum-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--border);
+}
+.sum-row:last-child { border-bottom: 0; }
+.sum-subtotal { font-weight: 700; }
+.sum-total { font-weight: 800; }
+
+.empty-cart {
+  background: #fffbe6;
+  border: 1px solid #ffe58f;
+  border-radius: 12px;
+  padding: 12px;
+  color: #6f5a00;
+}
+
+/* ===========================
    Footer / Disclaimer blocks
    =========================== */
 .disclaimer, .site-footer {
@@ -375,4 +452,10 @@ body {
 
   /* Histories */
   .history-grid { grid-template-columns: 1fr; }
+
+  /* Cart */
+  .cart-table thead { display: none; }
+  .cart-table, .cart-table tbody, .cart-table tr, .cart-table td { display: block; width: 100%; }
+  .cart-row { margin-bottom: 12px; border-bottom: 1px solid var(--border); }
+  .cart-actions { text-align: left; margin-top: 8px; }
 }

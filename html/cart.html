@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Your Name" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Museum of Cultural Memory — Cart</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Museum of Cultural Memory</h1>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="staff.html">Staff</a>
+      <a href="collections.html">Collections</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html" aria-current="page">Cart</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="collection-h1">Shopping Cart</h1>
+    <p class="muted">Review your items. Discounts and tax calculate automatically.</p>
+
+    <div class="cart-controls">
+      <label class="member-toggle">
+        <input type="checkbox" id="memberToggle" /> Apply member discount (15%)
+      </label>
+      <div class="cart-ctrl-buttons">
+        <button id="keepShoppingBtn" class="add-btn" type="button">Keep Shopping</button>
+        <button id="clearCartBtn" class="add-btn" type="button">Clear Cart</button>
+      </div>
+    </div>
+
+    <!-- One render target per spec -->
+    <div id="cart-root" class="cart-root" aria-live="polite"></div>
+  </main>
+
+  <script src="../js/cart.js"></script>
+</body>
+</html>

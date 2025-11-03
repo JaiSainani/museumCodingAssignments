@@ -23,6 +23,11 @@
     <h1 class="collection-h1">Souvenir Shop</h1>
     <p class="muted">Click any item image to view details. Hover for a quick quote. Prices in USD.</p>
 
+    <!-- View Cart control -->
+    <div class="shop-toolbar">
+      <button onclick="location.href='cart.html'" id="viewCartBtn" class="add-btn">View Cart</button>
+    </div>
+
     <section class="shop-grid" aria-label="Products">
 
       <!-- Item 1 -->
@@ -30,16 +35,13 @@
         data-id="item-obsidian-replica"
         data-title="Obsidian Spearhead Replica"
         data-price="22.00"
-        data-img="../images/collections/ObsidianSpearhead.png"
-        data-collection="Archaeology"
-        data-material="Resin with obsidian finish"
-        data-location="Ridgefield Site B"
-        data-purpose="Desk artifact">
+        data-img="../images/collections/ObsidianSpearhead.png">
         <img
           src="../images/collections/ObsidianSpearhead.png"
           alt="Replica obsidian spearhead with glossy finish."
           title="“Edge retouch and glossy sheen.” — Field notes"
           class="souvenir-img" />
+        <span class="qty-badge" aria-live="polite"></span>
         <div class="souvenir-info">
           <h2>Obsidian Spearhead Replica</h2>
           <p class="desc">
@@ -49,7 +51,13 @@
             <strong>Purpose:</strong> Desk artifact
           </p>
           <p class="price">$22.00</p>
-          <button class="add-btn" aria-label="Add Obsidian Spearhead Replica to Cart">
+          <button class="add-btn"
+            onclick="addToCart(this)"
+            data-id="item-obsidian-replica"
+            data-name="Obsidian Spearhead Replica"
+            data-price="22.00"
+            data-image="../images/collections/ObsidianSpearhead.png"
+            aria-label="Add Obsidian Spearhead Replica to Cart">
             Add Obsidian Spearhead Replica to Cart
           </button>
         </div>
@@ -60,16 +68,13 @@
         data-id="item-stone-arch-postcards"
         data-title="Stone Arch Postcard Set"
         data-price="9.00"
-        data-img="../images/collections/StoneArch.png"
-        data-collection="Archaeology"
-        data-material="Cardstock prints"
-        data-location="Temple approach, Trench D"
-        data-purpose="Postcard set">
+        data-img="../images/collections/StoneArch.png">
         <img
           src="../images/collections/StoneArch.png"
           alt="Postcard image of the small limestone arch."
           title="“Threshold of the old temple.” — Site diary"
           class="souvenir-img" />
+        <span class="qty-badge" aria-live="polite"></span>
         <div class="souvenir-info">
           <h2>Stone Arch Postcard Set</h2>
           <p class="desc">
@@ -79,7 +84,13 @@
             <strong>Purpose:</strong> Postcard set
           </p>
           <p class="price">$9.00</p>
-          <button class="add-btn" aria-label="Add Stone Arch Postcard Set to Cart">
+          <button class="add-btn"
+            onclick="addToCart(this)"
+            data-id="item-stone-arch-postcards"
+            data-name="Stone Arch Postcard Set"
+            data-price="9.00"
+            data-image="../images/collections/StoneArch.png"
+            aria-label="Add Stone Arch Postcard Set to Cart">
             Add Stone Arch Postcard Set to Cart
           </button>
         </div>
@@ -90,16 +101,13 @@
         data-id="item-bone-pendant-necklace"
         data-title="Bone Pendant Necklace (Replica)"
         data-price="18.00"
-        data-img="../images/collections/BonePendant.png"
-        data-collection="Anthropology"
-        data-material="Bone substitute"
-        data-location="Cave sector E"
-        data-purpose="Pendant">
+        data-img="../images/collections/BonePendant.png">
         <img
           src="../images/collections/BonePendant.png"
           alt="Bone pendant with incised spiral and suspension hole, replica."
           title="“Incised spiral motif.” — Cave notes"
           class="souvenir-img" />
+        <span class="qty-badge" aria-live="polite"></span>
         <div class="souvenir-info">
           <h2>Bone Pendant Necklace (Replica)</h2>
           <p class="desc">
@@ -109,7 +117,13 @@
             <strong>Purpose:</strong> Pendant
           </p>
           <p class="price">$18.00</p>
-          <button class="add-btn" aria-label="Add Bone Pendant Necklace (Replica) to Cart">
+          <button class="add-btn"
+            onclick="addToCart(this)"
+            data-id="item-bone-pendant-necklace"
+            data-name="Bone Pendant Necklace (Replica)"
+            data-price="18.00"
+            data-image="../images/collections/BonePendant.png"
+            aria-label="Add Bone Pendant Necklace (Replica) to Cart">
             Add Bone Pendant Necklace (Replica) to Cart
           </button>
         </div>
@@ -120,16 +134,13 @@
         data-id="item-ceramic-bowl-mini"
         data-title="Ceramic Bowl Miniature"
         data-price="15.00"
-        data-img="../images/collections/CeramicBowl.png"
-        data-collection="Archaeology"
-        data-material="Earthenware"
-        data-location="Domestic block A"
-        data-purpose="Mini decor">
+        data-img="../images/collections/CeramicBowl.png">
         <img
           src="../images/collections/CeramicBowl.png"
           alt="Small earthenware bowl replica with faint geometric banding."
           title="“Soot‑kissed shoulder band.” — Hearth record"
           class="souvenir-img" />
+        <span class="qty-badge" aria-live="polite"></span>
         <div class="souvenir-info">
           <h2>Ceramic Bowl Miniature</h2>
           <p class="desc">
@@ -139,7 +150,13 @@
             <strong>Purpose:</strong> Mini decor
           </p>
           <p class="price">$15.00</p>
-          <button class="add-btn" aria-label="Add Ceramic Bowl Miniature to Cart">
+          <button class="add-btn"
+            onclick="addToCart(this)"
+            data-id="item-ceramic-bowl-mini"
+            data-name="Ceramic Bowl Miniature"
+            data-price="15.00"
+            data-image="../images/collections/CeramicBowl.png"
+            aria-label="Add Ceramic Bowl Miniature to Cart">
             Add Ceramic Bowl Miniature to Cart
           </button>
         </div>
@@ -148,7 +165,7 @@
     </section>
   </main>
 
-  <!-- Modal (single, dynamic) -->
+  <!-- Product modal (unchanged visual) -->
   <div id="item-modal" class="modal" role="dialog" aria-modal="true"
        aria-labelledby="modal-title" aria-describedby="modal-desc" hidden>
     <div class="modal-backdrop" data-close></div>
